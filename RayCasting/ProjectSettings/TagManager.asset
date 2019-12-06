@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teleport Button 1
   - Teleport Button 2
+  - Grabbable
   layers:
   - Default
   - TransparentFX

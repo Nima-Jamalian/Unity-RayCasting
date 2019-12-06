@@ -50,6 +50,11 @@ public class CameraRayCasting : MonoBehaviour
                 transform.position = _teleportLocations[1].transform.position;
                 StartCoroutine(TurnOfLodaingScreen());
             }
+            if (hit.transform.CompareTag("Grabbable"))
+            {
+                print("Grabbable Gamobject.");
+                hit.transform.Translate(hit.transform.position);
+            }
             direction = direction * -1;
         }
     }
